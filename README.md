@@ -23,3 +23,7 @@ More information: https://en.wikipedia.org/wiki/Mersenne_Twister
 ## Run
 
 I wrapped it into a simple NPM build process. It's enough to install & build the module. It works in both Node and browser environments.
+
+## Tests
+
+I tested it on a napkin. I have to yet make some test cases. As you may notice, I wrapped up the testing lib, so we're getting there.
