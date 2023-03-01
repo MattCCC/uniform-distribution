@@ -1,0 +1,2 @@
+import q from"mersenne-twister";function I(m,b,d,r){let{random_excl:u}=new q,{PI:e,cos:n,acos:w,sqrt:L,min:i,max:s,floor:c}=Math,f=6356.7523,p=6378.137;d=s(d||0,1)/1e3,r=s(r||0,1)/1e3;let a=m*(e/180),R=b*(e/180),l=d**2,g=i(r,L(u()*(r**2-l)+l)),t=n(u()*e)*(g/f),o=(n(g/p)-n(t))/(n(a)*n(t-a))+1;o=w(s(-1,i(1,o)));let h=c(u()*2)?-1:1,P=c(u()*2)?-1:1;return t*=h,o*=P,t=(a+t)*(180/e),o=(R+o)*(180/e),{latitude:t,longitude:o}}export{I as getLocationAwayFromPOI};
+//# sourceMappingURL=index.mjs.map
